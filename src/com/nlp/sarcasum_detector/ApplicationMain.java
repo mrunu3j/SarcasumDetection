@@ -44,9 +44,9 @@ public class ApplicationMain {
 		stopwords=st.buildStopWordHashSet();
 		//it gose's through the sarcastic tweet's train data and using POS tags generates the list of positive phrases
 		//which are following the rules written for the negative sentiments
-		//app.readPositivePhrases();
+		app.readPositivePhrases();
 		GetPositivePhrases gpos=new GetPositivePhrases();
-		positivePhrases=gpos.grtpositivephrases(stopwords);
+		//positivePhrases=gpos.grtpositivephrases(stopwords);
 		positiveTweetsprobablity=new double[positivePhrases.size()];
 		negativeTweetsprobablity=new double[positivePhrases.size()];
 		//Read the positive and negative tweet's from file
